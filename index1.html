@@ -1,0 +1,995 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<style></style>
+
+<!-- HTML -->
+ </html>
+</body>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portofolio Kelompok 7</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#f5f7fb;
+color:#333;
+}
+
+/*======================
+NAVBAR
+=======================*/
+
+header{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+background:#0f172a;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 8%;
+z-index:1000;
+box-shadow:0 5px 15px rgba(0,0,0,.2);
+}
+
+.logo{
+display:flex;
+align-items:center;
+}
+
+.logo img{
+width:55px;
+height:55px;
+border-radius:50%;
+margin-right:12px;
+border:2px solid white;
+}
+
+.logo h2{
+color:white;
+font-size:22px;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+}
+
+nav ul li{
+margin-left:30px;
+}
+
+nav ul li a{
+color:white;
+text-decoration:none;
+font-size:16px;
+transition:.4s;
+}
+
+nav ul li a:hover{
+color:#38bdf8;
+}
+
+/*======================
+HERO
+=======================*/
+
+.hero{
+
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+background:linear-gradient(135deg,#1e3a8a,#2563eb,#38bdf8);
+color:white;
+padding:20px;
+
+}
+
+.hero-content{
+
+max-width:800px;
+
+}
+
+.hero img{
+
+width:170px;
+height:170px;
+border-radius:50%;
+border:6px solid white;
+box-shadow:0 0 30px rgba(255,255,255,.3);
+
+}
+
+.hero h1{
+
+margin-top:25px;
+font-size:55px;
+
+}
+
+.hero h3{
+
+margin-top:15px;
+font-weight:400;
+
+}
+
+.hero p{
+
+margin-top:20px;
+line-height:30px;
+font-size:18px;
+
+}
+
+.btn{
+
+display:inline-block;
+margin-top:40px;
+padding:15px 35px;
+background:white;
+color:#2563eb;
+font-weight:bold;
+text-decoration:none;
+border-radius:40px;
+transition:.4s;
+
+}
+
+.btn:hover{
+
+background:#b6c3e0;
+color:rgb(36, 34, 138);
+transform:translateY(-5px);
+
+}
+
+/*======================
+SECTION
+=======================*/
+
+section{
+
+padding:100px 8%;
+
+}
+
+.judul{
+
+text-align:center;
+font-size:40px;
+margin-bottom:60px;
+color:#5b81db;
+
+}
+
+/*======================
+ANGGOTA
+=======================*/
+.anggota{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:30px;
+
+}
+
+.card{
+
+background:rgb(19, 1, 136);
+border-radius:20px;
+padding:30px;
+text-align:center;
+box-shadow:0 15px 30px rgba(224, 212, 212, 0.959);
+transition:.4s;
+
+}
+
+.card:hover{
+
+transform:translateY(-10px);
+
+}
+
+.card img{
+
+width:150px;
+height:150px;
+border-radius:50%;
+object-fit:cover;
+border:5px solid #2563eb;
+
+}
+
+.card h2{
+
+margin-top:20px;
+
+}
+
+.card p{
+
+margin:8px 0;
+
+}
+
+.card a{
+
+display:inline-block;
+margin-top:15px;
+padding:10px 25px;
+background:#2563eb;
+color:white;
+text-decoration:none;
+border-radius:30px;
+
+}
+
+.card a:hover{
+
+background:#000000;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+
+<img src="logo.png" alt="Logo Kelompok7">
+
+<h2>Kelompok 7</h2>
+
+</div>
+
+<nav>
+
+<ul>
+
+<li><a href="#home">Home</a></li>
+
+<li><a href="#anggota">Anggota</a></li>
+
+<li><a href="#kontak">Kontak</a></li>
+
+</ul>
+
+</nav>
+
+</header>
+
+<section class="hero" id="home">
+
+<div class="hero-content">
+
+<img src="bkt1.jpg" alt="Logo Kelompok7">
+
+<h1>PORTOFOLIO KELOMPOK 7</h1>
+
+<h3>Program Studi Bisnis Digital</h3>
+
+<p>
+
+Selamat datang di website portofolio Kelompok 7.
+Website ini berisi informasi mengenai profil,
+biodata, serta identitas seluruh anggota kelompok.
+
+</p>
+
+<a href="#anggota" class="btn">
+Hubungi Kami
+</a>
+
+</div>
+
+</section>
+
+<section id="anggota">
+
+<h1 class="judul">
+Anggota Kelompok
+</h1>
+<div class="anggota">
+
+<div class="card">
+<img src="ahmad.jpg">
+<h2>Ahmad Ishak</h2>
+<p>NIM : 202402057</p>
+<p>Bisnis Digital</p>
+<a href="#ahmad">
+Lihat Profil
+</a>
+</div>
+   
+<div class="card">
+<img src="husna.jpg">
+<h2>Husna</h2>
+<p>NIM : 202402081</p>
+<p>Bisnis Digital</p>
+<a href="#husna">
+Lihat Profil
+</a>
+</div>
+
+<div class="card">
+<img src="amal.jpg">
+<h2>Amal Rizal</h2>
+<p>NIM : 202402058</p>
+<p>Bisnis Digital</p>
+<a href="#amal">
+Lihat Profil
+</a>
+</div>
+</div>
+
+</section>
+
+<section id="ahmad">
+<h1 class="judul">Profil Ahmad Ishak</h1>
+<div class="profil">
+<div class="foto">
+<img src="ahmad.jpg" alt="Ahmad Ishak">
+</div>
+<div class="isi">
+<h2>Ahmad Ishak</h2>
+<p><b>NIM :</b> 202402057</p>
+<p><b>Program Studi :</b> Bisnis Digital</p>
+<p><b>Semester :</b> IV</p>
+<p><b>Email :</b> ahmadshak918@gmail.com</p>
+<p><b>No. HP :</b> 081240150048</p>
+<p><b>Alamat :</b> Sulawesi Barat,Polewali Mandar</p>
+<h3>Tentang Saya</h3>
+<p>
+Saya merupakan mahasiswa Program Studi Bisnis Digital yang memiliki
+ketertarikan pada pengembangan website, desain UI/UX, digital marketing,
+dan pemanfaatan teknologi digital untuk mendukung perkembangan bisnis.
+Saya senang belajar hal baru, bekerja sama dalam tim, serta terus
+mengembangkan kemampuan di bidang teknologi informasi.
+</p>
+
+<h3>Keahlian</h3>
+<div class="skill">
+<span>HTML</span>
+<span>CSS</span>
+<span>JavaScript</span>
+<span>Canva</span>
+<span>Microsoft Office</span>
+</div>
+</div>
+</div>
+</section>
+
+
+<!-- ===========================
+BIODATA HUSNA
+=========================== -->
+
+<section id="husna">
+<h1 class="judul">Profil Husna</h1>
+<div class="profil">
+<div class="foto">
+<img src="husna.jpg" alt="Husna">
+</div>
+<div class="isi">
+<h2>Husna</h2>
+<p><b>NIM :</b> 202402081</p>
+<p><b>Program Studi :</b> Bisnis Digital</p>
+<p><b>Semester :</b> IV</p>
+<p><b>Email :</b> husna34@gmail.com</p>
+<p><b>No. HP :</b> 085394164431</p>
+<p><b>Alamat :</b> Sulawesi Barat,Polewali Mandar</p>
+<h3>Tentang Saya</h3>
+<p>
+Saya merupakan mahasiswa Bisnis Digital yang memiliki minat dalam
+manajemen bisnis, pemasaran digital, desain grafis, dan analisis data.
+Saya senang bekerja sama dalam tim dan selalu berusaha memberikan hasil
+terbaik dalam setiap kegiatan akademik maupun organisasi.
+</p>
+<h3>Keahlian</h3>
+<div class="skill">
+<span>Digital Marketing</span>
+<span>Canva</span>
+<span>Microsoft Office</span>
+<span>Content Creator</span>
+<span>Public Speaking</span>
+</div>
+</div>
+</div>
+</section>
+
+
+<!-- ===========================
+BIODATA AMAL
+=========================== -->
+
+<section id="amal">
+<h1 class="judul">Profil Amal Rizal</h1>
+<div class="profil">
+<div class="foto">
+<img src="amal.jpg" alt="Amal Rizal">
+</div>
+<div class="isi">
+<h2>Amal Rizal</h2>
+<p><b>NIM :</b> 202402058</p>
+<p><b>Program Studi :</b> Bisnis Digital</p>
+<p><b>Semester :</b> IV</p>
+<p><b>Email :</b> amalriazal656@gmail.com</p>
+<p><b>No. HP :</b> 083894024063</p>
+<p><b>Alamat :</b> Sulawesi Barat,Polewali Mandar</p>
+<h3>Tentang Saya</h3>
+<p>
+Saya memiliki ketertarikan pada bidang teknologi informasi,
+pengembangan bisnis digital, serta desain website modern.
+Saya percaya bahwa inovasi dan kerja sama merupakan kunci dalam
+menghasilkan solusi yang kreatif dan bermanfaat.
+</p>
+<h3>Keahlian</h3>
+<div class="skill">
+<span>HTML</span>
+<span>CSS</span>
+<span>Canva</span>
+<span>UI Design</span>
+<span>Business Planning</span>
+</div>
+</div>
+</div>
+
+</section>
+
+<! -- ===========================
+KONTAK
+=========================== -->
+
+<section id="kontak">
+<h1 class="judul">Hubungi Kami</h1>
+<div class="profil">
+<div class="isi" style="text-align:center;">
+<h2>Kelompok 7</h2>
+<p>Email : kelompok7@gmail.com</p>
+<p>WhatsApp : 081240150048</p>
+<p>Program Studi Bisnis Digital</p>
+<p>Terima kasih telah mengunjungi website portofolio kami.</p>
+<a href="#home" class="btn">
+Kembali ke Atas
+</a>
+</div>
+</div>
+
+</section>
+
+<!-- ===========================
+FOOTER
+=========================== -->
+
+<footer>
+<h2>Portofolio Kelompok 7</h2>
+<hr>
+<p>
+© 2026 Kelompok 7 <br>
+Program Studi Bisnis Digital
+</p>
+</footer>
+
+<!-- ===========================
+JAVASCRIPT
+=========================== -->
+
+<script>
+
+// Smooth Scroll
+document.querySelectorAll('a[href^="#"]').forEach(anchor=>{
+anchor.addEventListener("click",function(e){
+e.preventDefault();
+const tujuan=document.querySelector(this.getAttribute("href"));
+if(tujuan){
+tujuan.scrollIntoView({
+behavior:"smooth"
+});
+}
+});
+});
+
+// Animasi Saat Scroll
+const observer=new IntersectionObserver((entries)=>{
+entries.forEach(entry=>{
+if(entry.isIntersecting){
+entry.target.style.opacity="1";
+entry.target.style.transform="translateY(0px)";
+}
+});
+});
+
+document.querySelectorAll(".card,.profil").forEach(el=>{
+el.style.opacity="0";
+el.style.transform="translateY(60px)";
+el.style.transition="1s";
+observer.observe(el);
+
+});
+
+</script>
+</body>
+</html>
+<style>
+/!-- =================================
+PROFIL ANGGOTA
+================================= --/
+
+.profil{
+display:flex;
+align-items:center;
+justify-content:center;
+gap:60px;
+background:#ffffff;
+padding:50px;
+border-radius:25px;
+box-shadow:0 15px 35px rgba(0,0,0,.12);
+margin-bottom:80px;
+transition:.4s;
+}
+
+.profil:hover{
+transform:translateY(-8px);
+}
+
+.foto{
+flex:1;
+text-align:center;
+}
+
+.foto img{
+width:300px;
+height:300px;
+object-fit:cover;
+border-radius:50%;
+border:8px solid #2563eb;
+box-shadow:0 10px 30px rgba(37,99,235,.35);
+transition:.5s;
+}
+
+.foto img:hover{
+transform:scale(1.05) rotate(2deg);
+}
+
+.isi{
+flex:2;
+}
+
+.isi h2{
+font-size:38px;
+color:#5e72a0;
+margin-bottom:20px;
+}
+
+.isi p{
+font-size:17px;
+line-height:32px;
+margin-bottom:10px;
+color:#555;
+}
+
+.isi h3{
+margin-top:25px;
+margin-bottom:15px;
+color:#2563eb;
+font-size:24px;
+}
+
+.skill{
+display:flex;
+flex-wrap:wrap;
+gap:15px;
+margin-top:20px;
+}
+
+.skill span{
+padding:12px 24px;
+background:#2563eb;
+color:#f3ecec;
+border-radius:30px;
+font-size:15px;
+font-weight:500;
+transition:.4s;
+}
+
+.skill span:hover{
+background:#99a2b6;
+transform:translateY(-4px);
+cursor:pointer;
+}
+
+/*=================================
+EFEK SECTION
+=================================*/
+
+section{
+animation:fadeUp 1s ease;
+}
+@keyframes fadeUp{
+from{
+opacity:0;
+transform:translateY(50px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+
+/*=================================
+BACKGROUND TIAP PROFIL
+=================================*/
+
+#ahmad{
+background:#041a38;
+}
+#husna{
+background:#041a38;
+}
+#amal{
+background:#041a38;
+}
+
+/*=================================
+FOOTER
+=================================*/
+
+footer{
+background:#000000;
+color:#2545ac;
+text-align:center;
+padding:40px 20px;
+margin-top:80px;
+}
+
+footer h2{
+margin-bottom:10px;
+font-size:28px;
+}
+
+footer p{
+font-size:15px;
+line-height:28px;
+color:#d1d5db;
+}
+
+footer hr{
+margin:25px auto;
+width:120px;
+border:1px solid #38bdf8;
+}
+
+/*=================================
+EFEK CARD PREMIUM
+=================================*/
+
+.card{
+position:relative;
+overflow:hidden;
+}
+
+.card::before{
+content:"";
+position:absolute;
+top:0;
+left:-100%;
+width:100%;
+height:100%;
+background:linear-gradient(
+90deg,
+transparent,
+rgba(255,255,255,.35),
+transparent
+);
+transition:.8s;
+}
+
+.card:hover::before{
+left:100%;
+}
+
+.card h2{
+color:#d0daf1;
+margin-top:20px;
+margin-bottom:10px;
+}
+
+.card p{
+color:#666;
+font-size:15px;
+}
+
+.card a{
+transition:.4s;
+font-weight:600;
+}
+
+.card a:hover{
+transform:scale(1.05);
+}
+
+/*=================================
+SCROLLBAR
+=================================*/
+
+::-webkit-scrollbar{
+width:10px;
+}
+
+::-webkit-scrollbar-track{
+background:#e5e7eb;
+}
+
+::-webkit-scrollbar-thumb{
+background:#2563eb;
+border-radius:20px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+background:#1d4ed8;
+}
+
+/*=================================
+RESPONSIVE TABLET
+=================================*/
+
+@media(max-width:992px){
+
+.hero h1{
+font-size:42px;
+}
+
+.profil{
+flex-direction:column;
+text-align:center;
+}
+
+.foto img{
+width:240px;
+height:240px;
+}
+
+.isi{
+margin-top:20px;
+}
+
+.skill{
+justify-content:center;
+}
+
+}
+
+/*=================================
+RESPONSIVE HP
+=================================*/
+
+@media(max-width:768px){
+
+header{
+flex-direction:column;
+padding:15px;
+}
+
+nav ul{
+margin-top:15px;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+nav ul li{
+margin:10px;
+}
+
+.hero{
+padding-top:120px;
+}
+
+.hero h1{
+font-size:34px;
+}
+
+.hero h3{
+font-size:18px;
+}
+
+.hero p{
+font-size:16px;
+line-height:28px;
+}
+
+.hero img{
+width:130px;
+height:130px;
+}
+
+.judul{
+font-size:30px;
+}
+
+.card{
+padding:25px;
+}
+
+.foto img{
+width:200px;
+height:200px;
+}
+
+.isi h2{
+font-size:30px;
+}
+
+.isi p{
+font-size:15px;
+}
+
+.skill span{
+font-size:14px;
+padding:10px 18px;
+}
+
+.btn{
+padding:14px 28px;
+}
+}
+
+/*=================================
+ ANIMASI HALUS
+=================================*/
+
+html{
+scroll-behavior:smooth;
+}
+
+.hero-content,
+.card,
+.profil{
+animation:muncul 1s ease;
+}
+
+@keyframes muncul{
+0%{
+opacity:0;
+transform:translateY(50px);
+}
+100%{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+/*=================================
+EFEK TOMBOL
+=================================*/
+
+.btn,
+.card a{
+position:relative;
+overflow:hidden;
+}
+
+.btn::after,
+.card a::after{
+content:"";
+position:absolute;
+width:0;
+height:100%;
+top:0;
+left:0;
+background:rgba(255,255,255,.25);
+transition:.5s;
+}
+
+.btn:hover::after,
+.card a:hover::after{
+width:100%;
+}
+
+/*=================================
+EFEK GAMBAR
+=================================*/
+
+.hero img,
+.card img,
+.foto img{
+transition:.5s;
+}
+
+.hero img:hover{
+transform:rotate(5deg) scale(1.05);
+}
+
+.card img:hover{
+transform:scale(1.08);
+}
+
+/*=================================
+JUDUL
+=================================*/
+
+.judul{
+position:relative;
+display:inline-block;
+left:50%;
+transform:translateX(-50%);
+padding-bottom:15px;
+margin-bottom:60px;
+}
+
+.judul::after{
+content:"";
+position:absolute;
+left:50%;
+transform:translateX(-50%);
+bottom:0;
+width:90px;
+height:4px;
+background:#2563eb;
+border-radius:10px;
+}
+
+/*=================================
+BAYANGAN
+=================================*/
+
+.hero,
+.card,
+.profil{
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+/*=================================
+BACKGROUND
+=================================*/
+
+body{
+background:linear-gradient(to bottom,#110101,#3b4450,#ffffff);
+}
+
+/*=================================
+SELEKSI TEKS
+=================================*/
+
+::selection{
+background:#2563eb;
+color:white;
+}
+
+/*=================================
+TRANSISI GLOBAL
+=================================*/
+
+a,
+button,
+img,
+.card,
+.profil,
+.skill span{
+transition:.4s ease;
+}
+
+/*=================================
+AKHIR CSS
+=================================*/

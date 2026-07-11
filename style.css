@@ -1,0 +1,562 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f5f7fb;
+    color:#333;
+}
+
+/* =======================
+   HEADER
+======================= */
+
+header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    background:#0f172a;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 8%;
+    z-index:1000;
+    box-shadow:0 5px 15px rgba(0,0,0,.2);
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+}
+
+.logo img{
+    width:55px;
+    height:55px;
+    border-radius:50%;
+    margin-right:12px;
+    border:2px solid #fff;
+}
+
+.logo h2{
+    color:#fff;
+    font-size:24px;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:30px;
+}
+
+nav ul li a{
+    color:#fff;
+    text-decoration:none;
+    font-weight:500;
+    transition:.3s;
+}
+
+nav ul li a:hover{
+    color:#38bdf8;
+}
+
+/* =======================
+   HERO
+======================= */
+
+.hero{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+    background:linear-gradient(135deg,#1e3a8a,#2563eb,#38bdf8);
+    color:#fff;
+}
+
+.hero-content{
+    max-width:850px;
+}
+
+.hero img{
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    object-fit:cover;
+    border:6px solid #fff;
+    box-shadow:0 10px 30px rgba(255,255,255,.3);
+}
+
+.hero h1{
+    margin-top:25px;
+    font-size:58px;
+}
+
+.hero h3{
+    margin-top:15px;
+    font-size:28px;
+    font-weight:400;
+}
+
+.hero p{
+    margin-top:20px;
+    line-height:30px;
+    font-size:18px;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:35px;
+    padding:15px 35px;
+    border-radius:35px;
+    text-decoration:none;
+    background:#fff;
+    color:#2563eb;
+    font-weight:600;
+    transition:.4s;
+}
+
+.btn:hover{
+    background:#0f172a;
+    color:#fff;
+    transform:translateY(-5px);
+}
+/* =======================
+   SECTION
+======================= */
+
+section{
+    padding:100px 8%;
+}
+
+.judul{
+    text-align:center;
+    font-size:42px;
+    color:#0f172a;
+    margin-bottom:60px;
+    position:relative;
+}
+
+.judul::after{
+    content:"";
+    width:90px;
+    height:4px;
+    background:#2563eb;
+    display:block;
+    margin:15px auto;
+    border-radius:10px;
+}
+
+/* =======================
+   CARD ANGGOTA
+======================= */
+
+.anggota{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:35px;
+}
+
+.card{
+    background:#fff;
+    border-radius:25px;
+    padding:30px;
+    text-align:center;
+    box-shadow:0 15px 35px rgba(0,0,0,.12);
+    transition:.5s;
+    overflow:hidden;
+}
+
+.card:hover{
+    transform:translateY(-15px);
+    box-shadow:0 25px 45px rgba(37,99,235,.25);
+}
+
+.card img{
+    width:170px;
+    height:170px;
+    border-radius:50%;
+    object-fit:cover;
+    border:6px solid #2563eb;
+    transition:.5s;
+}
+
+.card:hover img{
+    transform:scale(1.08);
+    border-color:#38bdf8;
+}
+
+.card h2{
+    margin-top:20px;
+    color:#0f172a;
+    font-size:28px;
+}
+
+.card p{
+    color:#666;
+    margin:10px 0;
+    line-height:28px;
+}
+
+.card a{
+    display:inline-block;
+    margin-top:20px;
+    padding:12px 28px;
+    background:#2563eb;
+    color:#fff;
+    border-radius:30px;
+    text-decoration:none;
+    font-weight:600;
+    transition:.4s;
+}
+
+.card a:hover{
+    background:#0f172a;
+}
+/* =======================
+   PROFIL ANGGOTA
+======================= */
+
+.profil{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:50px;
+    background:#ffffff;
+    padding:50px;
+    border-radius:25px;
+    box-shadow:0 15px 35px rgba(0,0,0,.12);
+    margin-bottom:80px;
+    transition:.4s;
+}
+
+.profil:hover{
+    transform:translateY(-8px);
+}
+
+.foto{
+    flex:1;
+    text-align:center;
+}
+
+.foto img{
+    width:300px;
+    height:300px;
+    object-fit:cover;
+    border-radius:50%;
+    border:8px solid #2563eb;
+    box-shadow:0 15px 30px rgba(37,99,235,.25);
+    transition:.5s;
+}
+
+.foto img:hover{
+    transform:scale(1.05);
+}
+
+.isi{
+    flex:2;
+}
+
+.isi h2{
+    font-size:40px;
+    color:#0f172a;
+    margin-bottom:20px;
+}
+
+.isi h3{
+    margin-top:25px;
+    margin-bottom:15px;
+    color:#2563eb;
+    font-size:24px;
+}
+
+.isi p{
+    color:#555;
+    line-height:32px;
+    margin-bottom:10px;
+}
+
+/* =======================
+   SKILL
+======================= */
+
+.skill{
+    display:flex;
+    flex-wrap:wrap;
+    gap:15px;
+    margin-top:20px;
+}
+
+.skill span{
+    background:#2563eb;
+    color:white;
+    padding:12px 20px;
+    border-radius:30px;
+    font-size:15px;
+    transition:.4s;
+}
+
+.skill span:hover{
+    background:#0f172a;
+    transform:translateY(-5px);
+}
+
+/* =======================
+   ANIMASI
+======================= */
+
+@keyframes fadeUp{
+
+    from{
+        opacity:0;
+        transform:translateY(50px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+.card,
+.profil{
+
+    animation:fadeUp 1s ease;
+
+}
+
+/* =======================
+   BACKGROUND SECTION
+======================= */
+
+#ahmad{
+
+background:#eef5ff;
+
+}
+
+#husna{
+
+background:#f8fbff;
+
+}
+
+#amal{
+
+background:#eef5ff;
+
+}
+/* =======================
+   FOOTER
+======================= */
+
+footer{
+    background:#0f172a;
+    color:white;
+    text-align:center;
+    padding:50px 20px;
+}
+
+footer h2{
+    font-size:30px;
+    margin-bottom:20px;
+}
+
+footer hr{
+    width:120px;
+    margin:20px auto;
+    border:2px solid #38bdf8;
+    border-radius:10px;
+}
+
+footer p{
+    line-height:30px;
+    color:#d1d5db;
+}
+
+/* =======================
+   SCROLLBAR
+======================= */
+
+::-webkit-scrollbar{
+    width:10px;
+}
+
+::-webkit-scrollbar-track{
+    background:#e5e7eb;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#2563eb;
+    border-radius:20px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background:#0f172a;
+}
+
+/* =======================
+   RESPONSIVE TABLET
+======================= */
+
+@media (max-width:992px){
+
+header{
+    padding:15px 5%;
+}
+
+.hero h1{
+    font-size:42px;
+}
+
+.hero h3{
+    font-size:22px;
+}
+
+.profil{
+    flex-direction:column;
+    text-align:center;
+}
+
+.foto img{
+    width:240px;
+    height:240px;
+}
+
+.isi h2{
+    font-size:32px;
+}
+
+}
+
+/* =======================
+   RESPONSIVE HP
+======================= */
+
+@media (max-width:768px){
+
+header{
+    flex-direction:column;
+    padding:15px;
+}
+
+nav ul{
+    flex-wrap:wrap;
+    justify-content:center;
+    margin-top:15px;
+}
+
+nav ul li{
+    margin:10px;
+}
+
+.hero{
+    height:auto;
+    padding:140px 20px 80px;
+}
+
+.hero img{
+    width:140px;
+    height:140px;
+}
+
+.hero h1{
+    font-size:32px;
+    line-height:1.3;
+}
+
+.hero h3{
+    font-size:20px;
+}
+
+.hero p{
+    font-size:16px;
+    line-height:28px;
+}
+
+.btn,
+.btn2{
+    display:block;
+    margin:15px auto;
+    width:220px;
+}
+
+.judul{
+    font-size:32px;
+}
+
+.card{
+    padding:25px;
+}
+
+.card img{
+    width:140px;
+    height:140px;
+}
+
+.profil{
+    padding:30px 20px;
+}
+
+.foto img{
+    width:200px;
+    height:200px;
+}
+
+.isi h2{
+    font-size:28px;
+}
+
+.isi h3{
+    font-size:22px;
+}
+
+.skill{
+    justify-content:center;
+}
+
+}
+
+/* =======================
+   ANIMASI HOVER
+======================= */
+
+.card,
+.profil,
+.btn,
+.btn2{
+    transition:all .4s ease;
+}
+
+.card:hover,
+.profil:hover{
+    transform:translateY(-10px);
+}
+
+.btn:hover,
+.btn2:hover{
+    transform:translateY(-4px);
+}
+
+/* =======================
+   BACKGROUND HALAMAN
+======================= */
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    overflow-x:hidden;
+}
